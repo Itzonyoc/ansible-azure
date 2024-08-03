@@ -1,17 +1,17 @@
-- name: Check Resource Group
+- name: Check Resource Group (RG)
   shell: |
     az group exists --name "{{ resource_group.name }}"
-  register: rs_exists_status
+  register: rg_exists_status
 
 - name: Print result RG
   debug:
-    msg: "El RG existe?: {{ rs_exists_status }}"
+    msg: "El RG existe?: {{ rg_exists_status }}"
 
 - name: Create RG
   azure_rm_resourcegroup:
     name: "{{ resource_group.name }}"
     location: eastus2
-  when: rs_exists_status.stdout|bool == false
+  when: rg_exists_status.stdout|bool == false
   register: rg_status
 
 - debug:
