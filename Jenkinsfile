@@ -11,7 +11,7 @@ pipeline {
             }                    
             steps {
                 script {
-                    sh "ansible-azure main.yml -v"
+                    sh "ansible-playbook main.yml -v"
                 }
             }
         }
