@@ -1,2 +1,5 @@
 - name: Validar prerequisitos azure
   import_tasks: preparation.yml
+
+- name: Crear Azure Virtual Machine
+  import_tasks: vm_install.yml
