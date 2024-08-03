@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: "azure-ansible"
   connection: local
   
   roles:
