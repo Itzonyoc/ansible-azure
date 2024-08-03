@@ -11,7 +11,7 @@
     shell:
       cmd: zip -v
       
-   - name: Uninstall zip
-     apt:
-       name: zip
-       state: absent
+  - name: Uninstall zip
+    apt:
+      name: zip
+      state: absent
