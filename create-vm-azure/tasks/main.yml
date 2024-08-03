@@ -1,0 +1,2 @@
+- name: Validar prerequisitos azure
+  import_tasks: preparation.yml
