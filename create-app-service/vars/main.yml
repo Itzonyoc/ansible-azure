@@ -1,5 +1,5 @@
 
 resource_group: myResourceGroupAppNode2
-webapp_name: myfirstWebAppNodeAnsible
+webapp_name: myfirstWebAppNodeAnsible-JFF
 plan_name: myAppServicePlanAppNode2
 location: eastus
